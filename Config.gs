@@ -789,16 +789,7 @@ function setupSpreadsheet() {
     analyticsSheet.setFrozenRows(1);
     analyticsSheet.getRange('A1:G1').setBackground('#34a853').setFontColor('#ffffff').setFontWeight('bold');
     
-    // Sheet 3: Weekly Reports
-    const reportsSheet = ss.insertSheet('Weekly Reports');
-    reportsSheet.appendRow([
-      'Week Start', 'Week End', 'User ID', 'Report Content',
-      'Sent Date', 'Status'
-    ]);
-    reportsSheet.setFrozenRows(1);
-    reportsSheet.getRange('A1:F1').setBackground('#fbbc04').setFontColor('#ffffff').setFontWeight('bold');
-    
-    // Sheet 4: User Profiles (สำหรับดูข้อมูลเท่านั้น)
+    // Sheet 3: User Profiles (สำหรับดูข้อมูลเท่านั้น)
     const profilesSheet = ss.insertSheet('User Profiles');
     profilesSheet.appendRow([
       'User ID', 'Name', 'Role', 'Department', 'Active', 'Created Date'
